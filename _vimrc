@@ -1,6 +1,5 @@
 set nocompatible
 
-
 filetype off
 
 set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
@@ -94,6 +93,10 @@ set expandtab
 set laststatus=2
 set statusline+=%F
 
+"Çkb
+
+inoremap <Char-0x07F> <BS>
+nnoremap <Char-0x07F> <BS>
 
 "nnoremap j gj
 
