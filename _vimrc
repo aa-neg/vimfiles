@@ -20,6 +20,7 @@ filetype plugin indent on    " required
 
 
 "noremap <Char-0x07F> <BS> 
+"
 "nnoremap <Char-0x07F> <BS>
 
 if !has("gui_running")     
@@ -112,3 +113,9 @@ set numberwidth=4
 set splitright
 set matchpairs+=<:>
 
+
+nnoremap <tab> %
+vnoremap <tab> %
+
+vnoremap <C-c> "+y
+nnoremap <CR> o<Esc>
