@@ -7,6 +7,7 @@ call vundle#begin('$HOME/vimfiles/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
@@ -16,6 +17,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'zeis/vim-kolor'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -25,6 +27,8 @@ filetype plugin indent on    " required
 "
 "nnoremap <Char-0x07F> <BS>
 
+let g:indentLine_setColors = 0
+let g:indentLine_enabled = 1
 
 "if !has("gui_running")     
 "    set term=xterm
@@ -79,11 +83,6 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
-" gruvbox settings
-" let g:gruvbox_italic=0
-" let g:gruvbox_contrast=hard
-
-
 
 set ttyfast
 set mouse=a
@@ -101,8 +100,6 @@ set expandtab
 "Status line and vim airline settings
 set laststatus=2
 set statusline+=%F
-
-"Çkb
 
 inoremap <Char-0x07F> <BS>
 nnoremap <Char-0x07F> <BS>
