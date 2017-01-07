@@ -18,6 +18,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'zeis/vim-kolor'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
